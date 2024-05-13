@@ -1,6 +1,7 @@
 package tests;
 
 import com.codeborne.selenide.Configuration;
+import io.qameta.allure.*;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
@@ -16,6 +17,12 @@ public class BasicTestForm {
     Configuration.baseUrl = "https://demoqa.com";
     Configuration.browserSize = "2560x1440";
   }
+
+  @Feature("Test form")
+  @Story("Первое добавление allure")
+  @Owner("parakevich_m")
+  @Severity(SeverityLevel.BLOCKER)
+  @Link(value = "Test Link", url = "https://ya.ru")
 
 
   @Test
